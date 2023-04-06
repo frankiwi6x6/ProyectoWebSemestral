@@ -1,0 +1,40 @@
+.icono {
+    height: 50px;
+    -webkit-transition: 500ms linear all;
+    transform: rotate(0deg);
+    transition: 500ms linear all;
+}
+
+.icono:hover {
+    filter: invert();
+    transition: 500ms linear all;
+    scale: 1.05;
+    transform: rotate(54deg);
+}
+
+.nav-link {
+    -webkit-transition: 200ms linear all;
+    background: #ccc;
+}
+
+.nav-link:hover {
+    background: #ccc;
+    border-radius: 24%;
+    -webkit-transition: 200ms linear all;
+}
+.carrito{
+    margin: 40%;
+}
+
+button .btn{
+    float: left;
+    margin-top: 1%;
+    margin-left: 1% ;
+    border: rgb(13, 255, 0);
+}
+.carousel-control-next-icon{
+    color: black;   
+}
+.carousel-item .boton{
+    float:left;
+}
