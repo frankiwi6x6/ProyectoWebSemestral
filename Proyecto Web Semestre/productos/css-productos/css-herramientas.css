@@ -219,7 +219,9 @@ button .btn{
     border-radius:  20px 0 0 20px
 
 }
-
+.semillas{
+    display:none;
+}
 .item-carrito .botones .sumador-btn:hover {
     cursor: pointer;
     background-color: mediumblue;

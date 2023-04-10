@@ -12,6 +12,7 @@
     <link rel="script" href="JS/script.js">
 </head>
 
+
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -38,8 +39,8 @@
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="productos/productos.html" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="productos/productos.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Productos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,61 +67,120 @@
             </div>
         </div>
     </nav>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href=""><img src="img/mockup-ofertas.png" class="d-block w-100" alt="..."></a>
-            </div>
-            <div class="carousel-item">
-                <img src="img/mockup-envio-gratis.png" class="d-block w-100" alt="...">
 
-            </div> 
-            <div class="carousel-item">
-                <img src="img/mockup-nuevos-productos.png" class="d-block w-100" alt="...">
+    <section class="carrito-compras">
+        <!--INICIO item compra-->
+        <div class="item-carrito">
+
+
+            <div class="container">
+                <div class="row compra">
+                    <div class="col">
+                        <div class="">
+                            <div class="img"><img src="img/183464-800-auto.jpeg" alt="Imagen de pala"></div>
+                            <div class="desc">Herramientas</div>
+                            <div class="titulo">Pala de metal</div>
+                            <div class="box">
+                                <div class="precio">$7.890 C/U</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="botones">
+                            <div class="eliminar">
+                                <button class="btn-eliminar"><i class="bi bi-trash"></i></button>
+                            </div>
+                            <div class="sumador">
+                                <button class="sumador-btn menos">-</button>
+                                <input type="number" class="sumador-input" value="1" min="1">
+                                <button class="sumador-btn mas">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="false"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+
+        <!--FIN item compra-->
+        <!--INICIO item compra-->
+        <div class="item-carrito">
+
+
+            <div class="container">
+                <div class="row compra">
+                    <div class="col">
+                        <div class="">
+                            <div class="img"><img src="img/183464-800-auto.jpeg" alt="Imagen de pala"></div>
+                            <div class="desc">Herramientas</div>
+                            <div class="titulo">Pala de metal</div>
+                            <div class="box">
+                                <div class="precio">$7.890 C/U</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="botones">
+                            <div class="eliminar">
+                                <button class="btn-eliminar"><i class="bi bi-trash"></i></button>
+                            </div>
+                            <div class="sumador">
+                                <button class="sumador-btn menos">-</button>
+                                <input type="number" class="sumador-input" value="1" min="1">
+                                <button class="sumador-btn mas">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--FIN item compra-->
+
+        <hr>
+        <div>
+            <h1>Total: <strong>el total deberia ser la suma de las multiplicaciones de los precios por la cantidad</strong></h1>
+        </div>
+    </section>
+
+
+
+
+
 </body>
 <hr>
 <footer class="footer-arriba  bg-dark">
     <div class="row">
         <div class="footer-content col-sm">
-            <a href=""><h3>Contacto:</h3></a>
+            <a href="">
+                <h3>Contacto:</h3>
+            </a>
             <ul>
-            <p>contacto@jardineando.cl</p>
-            <p>+56 9 0000 0000</p>
-        </ul>
+                <p>contacto@jardineando.cl</p>
+                <p>+56 9 0000 0000</p>
+            </ul>
             <p class="falso">No existen estos datos, no intente contactar.</p>
         </div>
         <div class="footer-content col-sm">
             <a href="#">
-                
+
                 <h3>Servicio al cliente</h3>
             </a>
             <ul>
-            <a href="#">
-                <p>Términos y condiciones</p>
-            </a>
-            <a href="#">
-                <p>Orden de servicio</p>
-            </a>
-            <a href="#">
-                <p>Representante legal</p>
-            </a>
-            <a href="#">
-                <p>Bases y promociones</p>
-            </a>
-        </ul>
+                <a href="#">
+                    <p>Términos y condiciones</p>
+                </a>
+                <a href="#">
+                    <p>Orden de servicio</p>
+                </a>
+                <a href="#">
+                    <p>Representante legal</p>
+                </a>
+                <a href="#">
+                    <p>Bases y promociones</p>
+                </a>
+            </ul>
         </div>
     </div>
 </footer>
