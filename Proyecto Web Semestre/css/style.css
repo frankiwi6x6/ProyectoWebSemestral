@@ -1,3 +1,20 @@
+html {
+    background-color: 33, 37, 41;
+}
+
+.contenido-jardin p {
+    margin-left: 20%;
+
+    margin-right: 20%;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+.carousel .slide .c {
+    margin: auto;
+}
 
 .icono {
     height: 50px;
@@ -5,55 +22,68 @@
     transform: rotate(0deg);
     transition: 500ms linear all;
 }
+
 .icono:hover {
     filter: invert();
-    
+
     scale: 1.05;
     transform: rotate(180deg);
     transition: 500ms linear all;
 }
+
 .nav-link {
     -webkit-transition: 300ms linear all;
 }
+
 .nav-link:hover {
     background: #ccc;
     border-radius: 24%;
     -webkit-transition: 300ms linear all;
 }
-.carrito{
+
+.carrito {
     margin: 40%;
 }
-button .btn{
+
+button .btn {
     float: left;
     margin-top: 1%;
-    margin-left: 1% ;
+    margin-left: 1%;
     border: rgb(13, 255, 0);
 }
-.carousel-control-next-icon{
-    color: black;   
+
+.carousel-control-next-icon {
+    color: black;
 }
-.footer-content h3{
-    color:#ccc;
+
+.footer-content h3 {
+    color: #ccc;
 }
-.footer-content a{
-    color:#ccc;
+
+.footer-content a {
+    color: #ccc;
     text-decoration: none;
 }
-.footer-content h3:hover{
-    color:#ccc;
+
+.footer-content h3:hover {
+    color: #ccc;
     opacity: 0.2;
 }
-.footer-arriba p{
-    color:#fff;
+
+.footer-arriba p {
+    color: #fff;
 }
-.falso{
+
+.falso {
     color: #fff;
     opacity: 0.2;
 }
-.footer-content{
+
+.footer-content {
     border-right-color: #ccc;
     border-left: 40px;
 }
+
 .pheading {
     text-align: center;
     margin: 50px 0;
@@ -62,6 +92,7 @@ button .btn{
 
 /*Productos*/
 
+
 .sec {
     padding: 10px 5%;
 
@@ -69,7 +100,7 @@ button .btn{
 
 .productos {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 
 }
 
@@ -187,23 +218,26 @@ button .btn{
     border: 1px solid red;
     border-radius: 20px;
 }
+
 .eliminar {
-    margin-left:89%;
+    margin-left: 89%;
     margin-bottom: 15%;
 }
+
 .sumador {
-    
+
     margin-left: 67%;
     margin-bottom: 2%;
 }
+
 .item-carrito .botones .btn-eliminar:hover {
     cursor: pointer;
     background-color: red;
     color: white;
 }
 
-.item-carrito .botones  .sumador-btn {
-    display:none;
+.item-carrito .botones .sumador-btn {
+    display: none;
     font-size: 13px;
     color: mediumblue;
     padding: 10px 18px;
@@ -211,17 +245,21 @@ button .btn{
     border: 1px solid mediumblue;
 
 }
+
 .item-carrito .botones .mas {
-    border-radius:  0 20px 20px 0;
+    border-radius: 0 20px 20px 0;
 
 }
-.item-carrito .botones  .menos {
-    border-radius:  20px 0 0 20px
 
+.item-carrito .botones .menos {
+    border-radius: 20px 0 0 20px
 }
 
 .item-carrito .botones .sumador-btn:hover {
     cursor: pointer;
     background-color: mediumblue;
     color: white;
+}
+.lista{
+    margin-left: 12%;
 }

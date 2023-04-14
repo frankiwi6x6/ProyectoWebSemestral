@@ -222,6 +222,7 @@ button .btn{
 .semillas{
     display:none;
 }
+
 .item-carrito .botones .sumador-btn:hover {
     cursor: pointer;
     background-color: mediumblue;
