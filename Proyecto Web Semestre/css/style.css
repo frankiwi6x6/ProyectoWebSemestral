@@ -1,6 +1,8 @@
 html {
     background-color: 33, 37, 41;
+    overflow-x: hidden;
 }
+
 
 .contenido-jardin p {
     margin-left: 20%;
@@ -31,21 +33,18 @@ html {
     transition: 500ms linear all;
 }
 
-.nav-link {
-    -webkit-transition: 300ms linear all;
-}
 
 .nav-link:hover {
-    background: #ccc;
+    background: #212529;
+    color: #212529;
     border-radius: 24%;
-    -webkit-transition: 300ms linear all;
 }
 
 .carrito {
     margin: 40%;
 }
 
-button .btn {
+.btn-add-cart button  {
     float: left;
     margin-top: 1%;
     margin-left: 1%;
@@ -141,23 +140,24 @@ button .btn {
 }
 
 .productos .tarjeta .box .precio {
-    color: #a2c11c;
+    color: #537b4f;
     font-size: 20px;
     font-weight: bold;
 }
 
-.productos .tarjeta .box .btn {
+.productos .tarjeta .box .btn-add-cart {
     font-size: 13px;
-    color: #a2c11c;
+    color: #537b4f;
+    background-color: #fff;
     padding: 10px 18px;
     font-weight: 900;
-    border: 1px solid #a2c11c;
+    border: 1px solid #537b4f;
     border-radius: 20px;
 }
 
-.productos .tarjeta .box .btn:hover {
+.productos .tarjeta .box .btn-add-cart:hover {
     cursor: pointer;
-    background-color: #a2c11c;
+    background-color: #537b4f;
     color: white;
 }
 
@@ -205,7 +205,7 @@ button .btn {
 }
 
 .item-carrito .compra .box .precio {
-    color: #a2c11c;
+    color: #537b4f;
     font-size: 20px;
     font-weight: bold;
 }
@@ -262,4 +262,58 @@ button .btn {
 }
 .lista{
     margin-left: 12%;
+}
+.sesion{
+    float: left;
+}
+#btn-sesion{
+    color: #537b4f;
+
+    border-color: #537b4f;
+}
+#btn-sesion:hover{
+    color: #212529;
+    background-color: #537b4f;
+    border-color: #537b4f;
+}
+
+#log-in a{
+    color: #537b4f;
+    text-decoration: none;
+}
+#log-in .btn{
+    color: white;
+    width: 200px;
+    border-radius: 0 0 0 0;
+    background-color:#537b4f;
+    border-color: #537b4f;
+    border-style: none;
+}
+#log-in input{
+    width: 300px;
+    height: 45px;
+}
+.separador {
+    height: 16px; /* Nuevo alto de la imagen */
+    background-image: url(../img/icono-mini-gris.png); /* Ruta de la imagen */
+    background-repeat: repeat-x; /* Repetir la imagen horizontalmente */
+    background-size: 16px 16px; /* Nuevo tamaño de la imagen */
+  }
+
+.formulario-log-in form{
+    padding: 10%;
+    background-color: white;
+
+}
+
+.contenedor-formulario{
+    background-color: #212529;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
 }
