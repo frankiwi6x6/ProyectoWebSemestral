@@ -1,0 +1,129 @@
+/*carrito de compras*/
+
+.item-carrito {
+  display: list-item;
+}
+
+.item-carrito .compra {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-carrito .compra img {
+  height: 100px;
+  width: 100px;
+}
+
+.item-carrito .compra .titulo {
+  font-weight: 900;
+  font-size: 20px;
+  color: #424144;
+  padding: 0 20px;
+  flex: 1;
+}
+
+.item-carrito .compra .box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.item-carrito .compra .box .precio {
+  color: #537b4f;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.item-carrito .botones {
+  display: flex;
+  align-items: center;
+}
+
+.item-carrito .botones .btn-eliminar {
+  font-size: 13px;
+  color: red;
+  padding: 10px 18px;
+  font-weight: 900;
+  border: 1px solid red;
+  border-radius: 20px;
+}
+
+.item-carrito .botones .btn-eliminar:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.item-carrito .botones .sumador-btn {
+  display: none;
+  font-size: 13px;
+  color: mediumblue;
+  padding: 10px 18px;
+  font-weight: 900;
+  border: 1px solid mediumblue;
+}
+
+.item-carrito .botones .mas {
+  border-radius: 0 20px 20px 0;
+}
+
+.item-carrito .botones .menos {
+  border-radius: 20px 0 0 20px;
+}
+
+.item-carrito .botones .sumador-btn:hover {
+  cursor: pointer;
+  background-color: mediumblue;
+  color: white;
+}
+
+.lista {
+  margin-left: 12%;
+}
+
+/* Estilo de las tarjetas del carrito */
+.tarjeta-carrito {
+  background-color: #ffffff;
+  /* Fondo blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombreado */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilo de la imagen */
+.tarjeta-carrito .img img {
+  width: 80px;
+  /* Ancho fijo para las imágenes */
+}
+
+/* Estilo del nombre */
+.tarjeta-carrito .nombre {
+  font-weight: 900;
+  font-size: 20px;
+  color: #424144;
+}
+
+/* Estilo del precio */
+.tarjeta-carrito .precio {
+  color: #537b4f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Estilo del total */
+.contenedor-total, .total,
+h1 {
+  margin-left: auto;
+  color: #537b4f;
+  font-size: 20px;
+  font-weight: bold;
+}

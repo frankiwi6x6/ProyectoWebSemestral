@@ -1,0 +1,83 @@
+[
+    {
+        "nombre": "Pala",
+        "categoria": "Herramientas",
+        "precio": 7890,
+        "rutaImagen": "img/pala.jpg",
+        "cantidad": "1",
+        "stock": 10,
+        "alt": "Herramienta, Pala de metal 7890 cada una."
+    },
+    {
+        "nombre": "Rastrillo",
+        "categoria": "Herramientas",
+        "precio": 16680,
+        "rutaImagen": "img/rastrillo.jpg",
+        "cantidad": "1",
+        "stock": 10,
+        "alt": "Herramienta, Rastrillo de aluminio 16680 cada una."
+    },
+    {
+        "nombre": "Horquilla",
+        "categoria": "Herramientas",
+        "precio": 24890,
+        "rutaImagen": "img/horquilla-de-mano.jpg",
+        "cantidad": "1",
+        "stock": 10,
+        "alt": "Herramienta, Horquilla de acero 24890 cada una."
+    },
+    {
+        "nombre": "Azada",
+        "categoria": "Herramientas",
+        "precio": 8990,
+        "rutaImagen": "img/azada.jpg",
+        "cantidad": "1",
+        "stock": 10,
+        "alt": "Herramienta, Azada de hierro 8990 cada una."
+    },
+    {
+        "nombre": "Carretilla",
+        "categoria": "Herramientas",
+        "precio": 99690,
+        "rutaImagen": "img/carretilla.jpg",
+        "cantidad": "1",
+        "stock": 10,
+        "alt": "Herramienta, Carretilla cementera 99690 cada una."
+    },
+    {
+        "nombre": "Semillas de lechuga milanesa",
+        "categoria": "Semillas",
+        "precio": 1250,
+        "rutaImagen": "img/semilla-lechuga-milanesa.jpg",
+        "cantidad": "5 gramos",
+        "stock": 10,
+        "alt": "Semillas, Semillas de lechuga milanesa 1250 cada 5 gramos."
+    },
+    {
+        "nombre": "Semillas de espinaca",
+        "categoria": "Semillas",
+        "precio": 1250,
+        "rutaImagen": "img/semilla-espinaca.jpg",
+        "cantidad": "5 gramos",
+        "stock": 10,
+        "alt": "Semillas, Semillas de espinaca 1250 cada 5 gramos."
+    },
+    {
+        "nombre": "Semillas de lechuga",
+        "categoria": "Semillas",
+        "precio": 1250,
+        "rutaImagen": "img/semilla-lechuga.jpg",
+        "cantidad": "3 gramos",
+        "stock": 10,
+        "alt": "Semillas, Semillas de lechuga 1250 cada 5 gramos."
+    },
+    {
+        "nombre": "Semillas de tomate",
+        "categoria": "Semillas",
+        "precio": 1250,
+        "rutaImagen": "img/semilla-tomate.jpg",
+        "cantidad": "1 gramo",
+        "stock": 10,
+        "alt": "Semillas, Semillas de tomate 1250 cada 5 gramos."
+    }
+]

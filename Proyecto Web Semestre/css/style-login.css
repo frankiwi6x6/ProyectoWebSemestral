@@ -1,0 +1,45 @@
+.contenedor-formulario a {
+    color: #537b4f;
+    text-decoration: none;
+}
+
+.contenedor-formulario .btn {
+    color: white;
+    width: 200px;
+    border-radius: 0 0 0 0;
+    background-color: #537b4f;
+    border-color: #537b4f;
+    border-style: none;
+}
+
+.contenedor-formulario .input {
+
+    width: 300px;
+    height: 45px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(172, 172, 172);
+    border: #537b4f 1px;
+}
+
+.separador {
+    height: 16px;
+    /* Nuevo alto de la imagen */
+    background-image: url(../img/icono-mini-gris.png);
+    /* Ruta de la imagen */
+    background-repeat: repeat-x;
+    /* Repetir la imagen horizontalmente */
+    background-size: 16px 16px;
+    /* Nuevo tamaño de la imagen */
+}
+
+form {
+    padding: 10%;
+    background-color: white;
+
+}
+
+
+
