@@ -79,5 +79,68 @@
         "cantidad": "1 gramo",
         "stock": 10,
         "alt": "Semillas, Semillas de tomate 1250 cada 5 gramos."
+    },
+    {
+        "nombre": "Pino Radiata",
+        "categoria": "Arboles",
+        "precio": 5000,
+        "rutaImagen": "img/brote-pino.png",
+        "cantidad": "1 unidad",
+        "stock": 5,
+        "alt": "Árbol Pino Radiata, una especie de rápido crecimiento utilizada en plantaciones forestales."
+    },
+    {
+        "nombre": "Alerce Patagónico",
+        "categoria": "Arboles",
+        "precio": 8000,
+        "rutaImagen": "img/brote-alerce.png",
+        "cantidad": "1 unidad",
+        "stock": 10,
+        "alt": "Árbol Alerce Patagónico, un árbol majestuoso y longevo, considerado una especie en peligro de extinción."
+    },
+    {
+        "nombre": "Roble",
+        "categoria": "Arboles",
+        "precio": 6500,
+        "rutaImagen": "img/brote-roble.png",
+        "cantidad": "1 unidad",
+        "stock": 8,
+        "alt": "Árbol Roble, una especie de madera noble valorada por su durabilidad y belleza."
+    },
+    {
+        "nombre": "Coihue",
+        "categoria": "Arboles",
+        "precio": 5500,
+        "rutaImagen": "img/arbol-coihue.png",
+        "cantidad": "1 unidad",
+        "stock": 12,
+        "alt": "Árbol Coihue, un árbol nativo de los bosques chilenos con hermosas hojas y madera resistente."
+    },
+    {
+        "nombre": "Lenga",
+        "categoria": "Arboles",
+        "precio": 7000,
+        "rutaImagen": "img/arbol-lenga.png",
+        "cantidad": "1 unidad",
+        "stock": 6,
+        "alt": "Árbol Lenga, una especie emblemática de los bosques templados de Chile, valorada por su madera y colorido otoñal."
+    },
+    {
+        "nombre": "Arrayán",
+        "categoria": "Arboles",
+        "precio": 4500,
+        "rutaImagen": "img/arbol-arrayan.jpg",
+        "cantidad": "1 unidad",
+        "stock": 15,
+        "alt": "Árbol Arrayán, un árbol nativo de Chile conocido por su corteza lisa y su fruto comestible."
+    },
+    {
+        "nombre": "Canelo",
+        "categoria": "Arboles",
+        "precio": 4000,
+        "rutaImagen": "img/arbol-canelo.jpg",
+        "cantidad": "1 unidad",
+        "stock": 20,
+        "alt": "Árbol Canelo, un árbol sagrado mapuche con hermosas hojas y corteza aromática."
     }
 ]

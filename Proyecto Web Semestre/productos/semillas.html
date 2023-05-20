@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="bg-dark" lang="es">
 
 <head>
+    <!--INICIO HEAD CARPETA INTERNA-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jardineando</title>
-    <link rel="stylesheet" href="css-productos/css-semillas.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-productos.css">
+    <link rel="stylesheet" href="../css/style-semillas.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="script" href="JS/script.js">
-</head>
-
-
-<body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -22,9 +21,31 @@
         integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
         crossorigin="anonymous"></script>
 
+    <link rel="icon" href="../img/icono.png">
+    <script src="js/script-productos.js"></script>
+    <!--FIN HEAD CARPETA INTERNA-->
+
+</head>
+
+<body>
+
+
+    <!--INICIO NAVBAR VERSION CARPETA INTERNA-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="icono" src="../img/icono.png" alt="Icono flor"> Jardineando</a>
+            <a class="navbar-brand" href="../index.html">
+                <table class="icomo-marca">
+                    <tr>
+                        <td>
+                            <img class="icono" src="../img/icono.png" alt="Icono flor">
+                        </td>
+                        <td>
+                            Jardineando
+                        </td>
+                    </tr>
+                </table>
+
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,32 +54,41 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link active " aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="productos/productos.html" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="../productos/productos.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Productos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
-                            <li><a class="dropdown-item" href="herramientas.html">Herramientas</a></li>
-                            <li><a class="dropdown-item" href="semillas.html">Semillas</a></li>
-                            <li><a class="dropdown-item disabled" href="arboles.html">Arboles</a></li>
-                            <li><a class="dropdown-item disabled" href="arbustos.html">Arbustos</a></li>
-                            <li><a class="dropdown-item disabled" href="repelentes.html">Repelentes</a></li>
-                            <li><a class="dropdown-item disabled" href="fertilizantes.html">Fertilizantes</a></li>
+                            <li><a class="dropdown-item" href="../productos/productos.html">Todos los productos</a></li>
+                            <li><a class="dropdown-item" href="../productos/herramientas.html">Herramientas</a></li>
+                            <li><a class="dropdown-item" href="../productos/semillas.html">Semillas</a></li>
+                            <li><a class="dropdown-item disabled" href="../productos/arboles.html">Arboles</a></li>
+                            <li><a class="dropdown-item disabled" href="../productos/arbustos.html">Arbustos</a></li>
+                            <li><a class="dropdown-item disabled" href="../productos/repelentes.html">Repelentes</a>
+                            </li>
+                            <li><a class="dropdown-item disabled"
+                                    href="../productos/fertilizantes.html">Fertilizantes</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item ">
                         <a href="../carrito.html" class="nav-link"><i class="bi bi-cart2"></i></a>
                     </li>
+                    <li class=""> </li>
+
                 </ul>
+
+
+                <a href="#" class="navbar-brand sesion"></a>
+                <a id="btn-sesion" class="btn btn-outline-light my-2 my-sm-0" type="button" href="../cuenta/login.html"><i
+                        class="bi bi-person"> Iniciar Sesion</i></a>
                 <!--
-                  
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -67,162 +97,61 @@
             </div>
         </div>
     </nav>
-    
-    <!---->
-    <h1 class="pheading">Semillas:</h1>
-    <section class="sec">
-    <div class="productos">
+    <button id="scrollButton" onclick="scrollToTop()"><i class="bi bi-gear"></i></button>
 
-        <!--INICIO TARJETA-->
-        <div class="tarjeta herramientas">
-            <div class="img"><img src="../img/183464-800-auto.jpeg" alt="Imagen de pala" ></div>
-            <div class="desc">Herramientas</div>
-            <div class="titulo">Pala de metal</div>
-            <div class="box">
-                <div class="precio">$7.890 C/U
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
+    <div class="container-productos">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="pheading">Nuestros nuevos productos:</h1>
+            <section class="sec">
+              <div class="productos">
+                <!-- Contenido de los productos -->
+              </div>
+            </section>
+          </div>
         </div>
-        <!--FIN TARJETA-->
-        <!--INICIO TARJETA-->
-        <div class="tarjeta herramientas">
-            <div class="img"><img src="../img/rastrillo.jpg" alt="Imagen de pala" ></div>
-            <div class="desc">Herramientas</div>
-            <div class="titulo">Rastrillo de aluminio</div>
-            <div class="box">
-                <div class="precio">$16.680
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
-        </div>
-        <!--FIN TARJETA-->
-        <!--INICIO TARJETA-->
-        <div class="tarjeta herramientas">
-            <div class="img"><img src="../img/horquilla-de-mano.jpg" alt="Imagen de horquilla" ></div>
-            <div class="desc">Herramientas</div>
-            <div class="titulo">Horquilla de mano</div>
-            <div class="box">
-                <div class="precio">$24.890
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
-        </div>
-        <!--FIN TARJETA-->
-        <!--INICIO TARJETA-->
-        <div class="tarjeta herramientas">
-            <div class="img"><img src="../img/azada.jpg" alt="Imagen de azada" ></div>
-            <div class="desc">Herramientas</div>
-            <div class="titulo">Azada de metal</div>
-            <div class="box">
-                <div class="precio">$8.990
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
-        </div>
-        <!--FIN TARJETA-->
-        <!--INICIO TARJETA-->
-        <div class="tarjeta herramientas">
-            <div class="img"><img src="../img/carretilla.jpg" alt="Imagen de carretilla" ></div>
-            <div class="desc">Herramientas</div>
-            <div class="titulo">Carretilla concretera <br>90 litros</div>
-            <div class="box">
-                <div class="precio">$99.690
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
-        </div>
-        <!--FIN TARJETA-->
-        <!--INICIO TARJETA-->
-        <div class="tarjeta semillas">
-            <div class="img"><img src="../img/semilla-lechuga-milanesa.jpg" alt="Imagen de semillas de lechuga milanesa" ></div>
-            <div class="desc">Semillas</div>
-            <div class="titulo">Semillas de lechuga <br> milanesa 90 litros</div>
-            <div class="box">
-                <div class="precio">$1.250
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
-        </div>
-        <!--FIN TARJETA-->
-        <!--INICIO TARJETA-->
-        <div class="tarjeta semillas">
-            <div class="img"><img src="../img/semilla-espinaca.jpg" alt="Imagen de semillas de espinaca" ></div>
-            <div class="desc">Semillas</div>
-            <div class="titulo">Semillas de espinaca <br>5 gramos</div>
-            <div class="box">
-                <div class="precio">$1.250
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
-        </div>
-        <!--FIN TARJETA-->
-        <!--INICIO TARJETA-->
-        <div class="tarjeta semillas">
-            <div class="img"><img src="../img/semilla-lechuga.jpg" alt="Imagen de semillas de lechuga" ></div>
-            <div class="desc">Semillas</div>
-            <div class="titulo">Semillas de espinaca <br>5 gramos</div>
-            <div class="box">
-                <div class="precio">$1.250
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
-        </div>
-        <!--FIN TARJETA-->
-        <!--INICIO TARJETA-->
-        <div class="tarjeta semillas">
-            <div class="img"><img src="../img/semilla-tomate.jpg" alt="Imagen de semillas de tomate 5 gramos" ></div>
-            <div class="desc">Semillas</div>
-            <div class="titulo">Semillas de tomate <br>5 gramos</div>
-            <div class="box">
-                <div class="precio">$1.250
-                    </div>
-                <button class="btn">Añadir al carro</button>
-            </div>
-            
-        </div>
-        <!--FIN TARJETA-->
-    </div>
-</section>
-    </div>
+      </div>
+      <div id="notification" class="notification"></div>
+      
+    
+    
 </body>
+<hr>
+<div class="separador">
+
+</div>
+<hr>
 <footer class="footer-arriba  bg-dark">
     <div class="row">
         <div class="footer-content col-sm">
-            <a href=""><h3>Contacto:</h3></a>
+            <a href="">
+                <h3>Contacto:</h3>
+            </a>
             <ul>
-            <p>contacto@jardineando.cl</p>
-            <p>+56 9 0000 0000</p>
-        </ul>
+                <p>contacto@jardineando.cl</p>
+                <p>+56 9 0000 0000</p>
+            </ul>
             <p class="falso">No existen estos datos, no intente contactar.</p>
         </div>
         <div class="footer-content col-sm">
             <a href="#">
-                
+
                 <h3>Servicio al cliente</h3>
             </a>
             <ul>
-            <a href="#">
-                <p>Términos y condiciones</p>
-            </a>
-            <a href="#">
-                <p>Orden de servicio</p>
-            </a>
-            <a href="#">
-                <p>Representante legal</p>
-            </a>
-            <a href="#">
-                <p>Bases y promociones</p>
-            </a>
-        </ul>
+                <a href="#">
+                    <p>Términos y condiciones</p>
+                </a>
+                <a href="#">
+                    <p>Orden de servicio</p>
+                </a>
+                <a href="#">
+                    <p>Representante legal</p>
+                </a>
+                <a href="#">
+                    <p>Bases y promociones</p>
+                </a>
+            </ul>
         </div>
     </div>
 </footer>
