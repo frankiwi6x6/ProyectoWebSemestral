@@ -129,7 +129,7 @@
         "nombre": "Arrayán",
         "categoria": "Arboles",
         "precio": 4500,
-        "rutaImagen": "img/arbol-arrayan.jpg",
+        "rutaImagen": "img/arbol-arrayan.png",
         "cantidad": "1 unidad",
         "stock": 15,
         "alt": "Árbol Arrayán, un árbol nativo de Chile conocido por su corteza lisa y su fruto comestible."
@@ -142,5 +142,77 @@
         "cantidad": "1 unidad",
         "stock": 20,
         "alt": "Árbol Canelo, un árbol sagrado mapuche con hermosas hojas y corteza aromática."
+    },
+    {
+        "nombre": "Arbusto de rosas",
+        "categoria": "Arbustos",
+        "precio": 3500,
+        "rutaImagen": "img/arbusto-rosas.png",
+        "cantidad": "1 unidad",
+        "stock": 15,
+        "alt": "Arbusto de rosas, un arbusto ornamental con flores coloridas y fragantes."
+    },
+    {
+        "nombre": "Arbusto de lavanda",
+        "categoria": "Arbustos",
+        "precio": 2800,
+        "rutaImagen": "img/arbusto-lavanda.jpg",
+        "cantidad": "1 unidad",
+        "stock": 20,
+        "alt": "Arbusto de lavanda, un arbusto aromático con hermosas flores moradas y grisáceas."
+    },
+    {
+        "nombre": "Arbusto de jazmín",
+        "categoria": "Arbustos",
+        "precio": 4200,
+        "rutaImagen": "img/arbusto-jazmin.jpg",
+        "cantidad": "1 unidad",
+        "stock": 10,
+        "alt": "Arbusto de jazmín, un arbusto trepador con flores blancas y fragantes."
+    },
+    {
+        "nombre": "Arbusto de hortensias",
+        "categoria": "Arbustos",
+        "precio": 3900,
+        "rutaImagen": "img/arbusto-hortensias.png",
+        "cantidad": "1 unidad",
+        "stock": 12,
+        "alt": "Arbusto de hortensias, un arbusto ornamental con grandes y vistosas flores en tonos de rosa, azul o blanco."
+    },
+    {
+        "nombre": "Arbusto de lila",
+        "categoria": "Arbustos",
+        "precio": 3200,
+        "rutaImagen": "img/arbusto-lila.png",
+        "cantidad": "1 unidad",
+        "stock": 8,
+        "alt": "Arbusto de lila, un arbusto fragante con flores en racimos de colores morado, rosa o blanco."
+    },
+    {
+        "nombre": "Maceta de terracota",
+        "categoria": "Macetas",
+        "precio": 1500,
+        "rutaImagen": "img/maceta-terracota.png",
+        "cantidad": "1 unidad",
+        "stock": 20,
+        "alt": "Maceta de terracota, una maceta de barro cocido en color terracota ideal para plantas y flores."
+    },
+    {
+        "nombre": "Maceta de plástico",
+        "categoria": "Macetas",
+        "precio": 900,
+        "rutaImagen": "img/maceta-plastico.png",
+        "cantidad": "1 unidad",
+        "stock": 30,
+        "alt": "Maceta de plástico, una maceta resistente y liviana en color negro ideal para plantas de interior o exterior."
+    },
+    {
+        "nombre": "Maceta colgante",
+        "categoria": "Macetas",
+        "precio": 2500,
+        "rutaImagen": "img/maceta-colgante.png",
+        "cantidad": "1 unidad",
+        "stock": 15,
+        "alt": "Maceta colgante, una maceta con soporte para colgar en paredes o techos, perfecta para plantas colgantes."
     }
 ]

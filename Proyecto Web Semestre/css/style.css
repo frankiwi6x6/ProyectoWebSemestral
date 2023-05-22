@@ -152,3 +152,73 @@ html {
     color: red;
     padding-top: 20px;
 }
+
+#uso-api {
+    border-style: dashed;
+}
+
+.custom-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px 20px 20px 20px;
+    /* Valores para lograr esquinas redondeadas */
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input.error,
+.parsley-error {
+    background-color: rgba(255, 0, 0, 0.1);
+
+    border-color: red;
+    color: red;
+}
+
+form li {
+    list-style: none;
+    color: red;
+}
+
+
+.input-larga {
+    min-width: 90%;
+    width: 90%;
+    height: 30px;
+}
+
+.input-mediana {
+    width: 80%;
+    height: 30px;
+}
+
+.input-pequenna {
+    min-width: 50px;
+    width: 10%;
+    height: 30px;
+}
+
+.container-tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla {
+    border: 2px solid #212529;
+    border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+    border: 2px solid #212529;
+    padding: 8px;
+}
+
+.parrafo {
+    margin: 40px;
+}
+
+.parrafo h2 {
+    margin: 40px;
+}

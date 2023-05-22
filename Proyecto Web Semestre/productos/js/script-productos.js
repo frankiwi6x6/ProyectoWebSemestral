@@ -1,23 +1,10 @@
 var carrito = [];
 
-function toggleMenu() {
-  var menu = document.getElementById('menu-lateral');
-  menu.classList.toggle('show'); // Agrega o quita la clase 'show' al menú lateral
 
-  var colMd3 = document.querySelector('.col-md-3');
-  var colMd9 = document.querySelector('.col-md-9');
-  if (menu.classList.contains('show')) {
-    colMd3.style.width = '0'; // Reducimos el ancho del menú lateral
-    colMd9.style.gridTemplateColumns = '1fr'; // Expandimos los productos a ocupar toda la página
-  } else {
-    colMd3.style.width = 'auto'; // Restablecemos el ancho del menú lateral
-    colMd9.style.gridTemplateColumns = 'auto 1fr'; // Volvemos a la configuración original de las columnas
-  }
-}
 
 $(document).ready(function () {
   mostrarProductos();
-  mostrarCarrito();
+
 });
 
 // Función auxiliar para formatear el número con separadores de miles
@@ -29,6 +16,7 @@ function mostrarNotificacion(mensaje) {
   notification.text(mensaje);
 
   // Crear el botón de redireccionamiento al carrito
+  var salto = $('<br>')
   var btnCarrito = $('<button>').addClass('btn-redireccionar').text('Ver carrito');
   btnCarrito.on('click', function () {
     // Redireccionar al carrito de compras
@@ -39,7 +27,7 @@ function mostrarNotificacion(mensaje) {
   notification.find('.btn-redireccionar').remove();
 
   // Agregar el botón de redireccionamiento al mensaje de notificación
-  notification.append(btnCarrito);
+  notification.append(salto, btnCarrito);
 
   notification.fadeIn().delay(2000).fadeOut();
 }
@@ -53,6 +41,7 @@ function mostrarProductos() {
       var categoria = producto.categoria;
       var precio = producto.precio;
       var rutaImagen = producto.rutaImagen;
+      var stock = producto.stock;
 
       // Formatear el precio con separadores de miles
       var precioFormateado = separarMiles(precio);
@@ -71,20 +60,78 @@ function mostrarProductos() {
       tarjeta.append(imagen, descripcion, titulo, box);
 
       // Agregar la tarjeta al contenedor de productos
-      $('.productos').append(tarjeta);
+      var productosContainer = $('.productos');
+      productosContainer.append(tarjeta);
+
+      // Almacenar el precio en el elemento de la tarjeta
+      tarjeta.data('precio', precio);
 
       // Agregar evento click al botón "Añadir al carrito"
       boton.on('click', crearManejador(nombre, precio, rutaImagen));
+
+      // Agregar evento click a la tarjeta para mostrar el detalle del producto
+      tarjeta.find('.img').on('click', function () {
+        var tarjeta = $(this).closest('.tarjeta');
+        var nombreProducto = tarjeta.find('.titulo').text();
+        var imagenProducto = tarjeta.find('img').attr('src');
+        var descripcionProducto = tarjeta.find('.desc').text();
+        var precioTarjeta = tarjeta.data('precio');
+
+        mostrarDetalleProducto(nombreProducto, imagenProducto, descripcionProducto, precioTarjeta, stock);
+      });
     }
   }).fail(function (error) {
     console.log('Error al cargar el archivo JSON:', error);
   });
 }
 
+
+function mostrarDetalleProducto(nombre, imagen, descripcion, precio, stock) {
+  // Crear el contenedor del detalle del producto
+  var detalleProducto = $('<div>').addClass('detalle-producto');
+  var fondoNegro = $('<div>').addClass('fondo-negro');
+  var imagenElemento = $('<img>').attr('src', imagen).attr('alt', 'Imagen de ' + nombre);
+  var nombreElemento = $('<h2>').text(nombre);
+  var descripcionElemento = $('<p>').text(descripcion);
+  var precioDetalleFormateado = separarMiles(precio)
+  var precioElemento = $('<p>').addClass('precio').text('Precio: $' + precioDetalleFormateado);
+  var stockElemento = $('<p>').addClass('stock').text('Stock disponible: ' + stock);
+  var botonAgregar = $('<button>').addClass('btn-add-cart').text('Añadir al carrito');
+  var botonCerrar = $('<button>').addClass('btn btn-close btn-cerrar').text('');
+
+  // Agregar los elementos al contenedor del detalle del producto
+  detalleProducto.append(
+    botonCerrar,
+    imagenElemento,
+    nombreElemento,
+    descripcionElemento,
+    precioElemento,
+    stockElemento,
+    botonAgregar
+  );
+
+  // Agregar el contenedor del detalle del producto y el fondo negro al cuerpo del documento
+  $('body').append(fondoNegro, detalleProducto);
+
+  // Agregar evento click al botón "Cerrar"
+  botonCerrar.on('click', function () {
+    detalleProducto.remove();
+    fondoNegro.remove();
+  });
+
+  // Agregar evento click al botón "Agregar al carrito"
+  botonAgregar.on('click', function () {
+    agregarAlCarrito(nombre, precio, imagen);
+    mostrarNotificacion('Se ha añadido ' + nombre + ' a tu carrito');
+  });
+}
+
+
+
+
 function crearManejador(nombre, precio, rutaImagen) {
   return function () {
     agregarAlCarrito(nombre, precio, rutaImagen);
-    mostrarCarrito();
   };
 }
 
@@ -168,3 +215,35 @@ var carritoGuardado = localStorage.getItem('carrito');
 if (carritoGuardado) {
   carrito = JSON.parse(carritoGuardado);
 }
+$(document).ready(function () {
+  $('#filterButton').click(function () {
+    $(this).toggleClass('active');
+    $('#filterMenu').toggleClass('open');
+    $('#overlay').toggleClass('open');
+  });
+
+  $('#overlay').click(function () {
+    $('#filterButton').removeClass('active');
+    $('#filterMenu').removeClass('open');
+    $('#overlay').removeClass('open');
+  });
+});
+$(document).ready(function () {
+  // Capturar el evento de cambio en los checkboxes
+  $('input[type="checkbox"]').on('change', function () {
+    // Ocultar todos los productos
+    $('.productos .tarjeta').hide();
+
+    // Obtener las categorías seleccionadas
+    var categoriasSeleccionadas = [];
+    $('input[type="checkbox"]:checked').each(function () {
+      var categoria = $(this).attr('id').replace('filtro-', '');
+      categoriasSeleccionadas.push(categoria);
+    });
+
+    // Mostrar los productos de las categorías seleccionadas
+    categoriasSeleccionadas.forEach(function (categoria) {
+      $('.' + categoria).show();
+    });
+  });
+});
