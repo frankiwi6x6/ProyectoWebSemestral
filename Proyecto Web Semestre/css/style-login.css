@@ -41,5 +41,33 @@ form {
 
 }
 
+.warnings {
+
+    width: 300px;
+    height: 45px;
+    display: inline-table;
+    margin-bottom: 10px;
+}
+
+.incorrecto p {
+    background-color: rgb(148, 58, 58);
+    color: white;
+}
+.incorrecto input{
+    border-color: red;
+}
+
+.correcto p{
+    background-color: #537b4f;
+    color: white;
+}
+input.incorrecto {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-color: red;
+    color: red;
+}
+#formulario-registro .btn{
+    margin-top: 10px;
+}
 
 
