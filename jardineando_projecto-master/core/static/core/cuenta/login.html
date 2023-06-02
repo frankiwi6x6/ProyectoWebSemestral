@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="bg-dark" lang="es">
+
+<head>
+    <!--INICIO HEAD CARPETA INTERNA-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardineando</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-login.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="icon" href="../img/icono.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    <script src="js-cuenta/script.js"></script>
+    <!--FIN HEAD CARPETA INTERNA-->
+</head>
+
+<body>
+
+    
+
+
+    <!--INICIO NAVBAR VERSION CARPETA INTERNA-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <table class="icomo-marca">
+                    <tr>
+                        <td>
+                            <img class="icono" src="../img/icono.png" alt="Icono flor">
+                        </td>
+                        <td>
+                            Jardineando
+                        </td>
+                    </tr>
+                </table>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../productos/productos.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../productos/productos.html">Todos los productos</a></li>
+                            <li><a class="dropdown-item" href="../productos/herramientas.html">Herramientas</a></li>
+                            <li><a class="dropdown-item" href="../productos/semillas.html">Semillas</a></li>
+                            <li><a class="dropdown-item disabled" href="../productos/arboles.html">Arboles</a></li>
+                            <li><a class="dropdown-item disabled" href="../productos/arbustos.html">Arbustos</a></li>
+                            <li><a class="dropdown-item disabled" href="../productos/repelentes.html">Repelentes</a>
+                            </li>
+                            <li><a class="dropdown-item disabled"
+                                    href="../productos/fertilizantes.html">Fertilizantes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="../carrito.html" class="nav-link"><i class="bi bi-cart2"></i></a>
+                    </li>
+                    <li class=""> </li>
+
+                </ul>
+
+
+                <a href="#" class="navbar-brand sesion"></a>
+                <a id="btn-sesion" class="btn btn-outline-light my-2 my-sm-0" type="button" href="login.html"><i
+                        class="bi bi-person"> Iniciar Sesion</i></a>
+                <!--
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            -->
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--FIN DEL NAVBAR-->
+    <div class="contenedor-formulario">
+        <div class="formulario-log-in" id="formulario-log-in">
+            <form id="log-in" action="#" onsubmit="submitForm(event)">
+                <h2>Ingresar</h2>
+                <p></p>
+                <p><input class="input" type="email" id="correo-login" placeholder="Correo electrónico"></p>
+                <p><input class="input" type="password" id="contrasenna-login" placeholder="Contraseña"></p>
+                <p><a href="#" id="forgotten-pword">¿Olvidaste tu contraseña?</a></p>
+                <p><input class="btn iniciar-sesion" type="submit" value="Iniciar sesión"></p>
+                <p>
+                    <a href="#" id="crear-cuenta">Crear cuenta</a> /
+                    <a href="../index.html">Volver a la tienda</a>
+                </p>
+            </form>
+        </div>
+
+        <div id="restablecer-contrasenna">
+            <form action="#" class="formulario-restablecer" onsubmit="submitForm(event)">
+                <h2>Restablecer tu contraseña</h2>
+                <p></p>
+                <p>Te enviaremos un correo electrónico para restablecer tu contraseña</p>
+                <input class="input" type="email" name="correo-restablecer" id="correo-restablecer" placeholder="Correo electrónico">
+                <p></p>
+                <input class="btn enviar" type="submit" value="Enviar">
+                <br>
+                <br>
+                <a href="#" id="back-to-log-in">Volver al login</a>
+            </form>
+        </div>
+
+        <div id="formulario-registro">
+            <form id="register" action="#" method="get" onsubmit="return validateForm()">
+                <h2>Crear cuenta</h2>
+                <p></p>
+                <p>
+                    <input class="input" type="text" name="nombre" id="nombre" placeholder="Nombre" autocapitalize="words" autofocus>
+                </p>
+                <p>
+                    <input class="input" type="text" name="apellido" id="apellido" placeholder="Apellido" autocapitalize="words">
+                </p>
+                <p>
+                    <input class="input" type="text" name="correo-registro" id="correo-registro" placeholder="Correo electrónico" autocorrect="off" autocapitalize="off">
+                </p>
+                <p>
+                    <input class="input" type="password" name="password" id="password" placeholder="Contraseña">
+                </p>
+                <p class="warnings" id="warnings"></p>
+                
+                <p>
+                    <button class="btn" type="submit">Crear cuenta</button>
+                </p>
+                <a href="#" id="back-to-log-in-reg">Volver al login</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            console.log('Form submitted!');
+
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+<footer class="footer-arriba  bg-dark">
+    <div class="row">
+        <div class="footer-content col-sm">
+            <a href="">
+                <h3>Contacto:</h3>
+            </a>
+            <ul>
+                <p>contacto@jardineando.cl</p>
+                <p>+56 9 0000 0000</p>
+            </ul>
+            <p class="falso">No existen estos datos, no intente contactar.</p>
+        </div>
+        <div class="footer-content col-sm">
+            <a href="#">
+
+                <h3>Servicio al cliente</h3>
+            </a>
+            <ul>
+                <a href="#">
+                    <p>Términos y condiciones</p>
+                </a>
+                <a href="#">
+                    <p>Orden de servicio</p>
+                </a>
+                <a href="#">
+                    <p>Representante legal</p>
+                </a>
+                <a href="#">
+                    <p>Bases y promociones</p>
+                </a>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

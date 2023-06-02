@@ -1,0 +1,70 @@
+{% load static %}
+<!--INICIO NAVBAR VERSION CARPETA INICIAL-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'core-home' %}">
+            <table class="icomo-marca">
+                <tr>
+                    <td>
+                        <img class="icono" src="{% static 'core/img/icono.png' %}" alt="Icono flor">
+                    </td>
+                    <td>
+                        Jardineando
+                    </td>
+                </tr>
+            </table>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="{% url 'core-home' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="productos/productos.html" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="productos/productos.html">Todos los productos</a></li>
+                        <li><a class="dropdown-item" href="productos/herramientas.html">Herramientas</a></li>
+                        <li><a class="dropdown-item" href="productos/semillas.html">Semillas</a></li>
+                        <li><a class="dropdown-item" href="productos/arboles.html">Arboles</a></li>
+                        <li><a class="dropdown-item" href="productos/arbustos.html">Arbustos</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a href="carrito.html" class="nav-link"><i class="bi bi-cart2"></i></a>
+                </li>
+                <li class=""> </li>
+            </ul>
+            <a href="#" class="navbar-brand sesion"></a>
+            <a id="btn-sesion" class="btn btn-outline-light my-2 my-sm-0" type="button" href="cuenta/login.html"><i
+                    class="bi bi-person"> Iniciar Sesion</i></a>
+            <!--
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            -->
+        </div>
+    </div>
+</nav>
+
+<div id="uso-api">
+    <h3>Conoce la calidad del aire en las distintas zonas del país</h3>
+    <p>
+        <label for="select-elemento">Calidad de aire de:</label>
+        <select id="select-elemento"></select>
+    <div id="tabla-datos"></div>
+    </p>
+</div>
+<!--FIN DEL NAVBAR-->
