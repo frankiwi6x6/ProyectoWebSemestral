@@ -1,0 +1,242 @@
+[
+  {
+    "nombre": "Pala",
+    "precio": 7890,
+    "precio_oferta": 3940,
+    "categoria": "Herramientas",
+    "label": "Oferta",
+    "slug": "pala",
+    "description": "Una pala resistente y duradera, ideal para trabajos de jardinería y construcción. Fabricada con materiales de alta calidad.",
+    "rutaImagen": "pala.jpg"
+  },
+  {
+    "nombre": "Rastrillo",
+    "precio": 16680,
+    "precio_oferta": 8340,
+    "categoria": "Herramientas",
+    "label": "Oferta",
+    "slug": "rastrillo",
+    "description": "Un rastrillo de jardín con dientes resistentes y mango ergonómico. Perfecto para recolectar hojas, ramas y otros desechos del jardín.",
+    "rutaImagen": "rastrillo.jpg"
+  },
+  {
+    "nombre": "Horquilla",
+    "precio": 24890,
+    "precio_oferta": 12440,
+    "categoria": "Herramientas",
+    "label": "Oferta",
+    "slug": "horquilla",
+    "description": "Una horquilla de mano resistente y versátil. Ideal para cavar y levantar tierra, así como para mezclar compost y abono.",
+    "rutaImagen": "horquilla-de-mano.jpg"
+  },
+  {
+    "nombre": "Azada",
+    "precio": 8990,
+    "precio_oferta": 4490,
+    "categoria": "Herramientas",
+    "label": "Oferta",
+    "slug": "azada",
+    "description": "Una azada duradera y eficiente para labores de jardinería. Perfecta para cavar surcos, romper terrones y preparar el suelo.",
+    "rutaImagen": "azada.jpg"
+  },
+  {
+    "nombre": "Carretilla",
+    "precio": 99690,
+    "precio_oferta": 49840,
+    "categoria": "Herramientas",
+    "label": "Oferta",
+    "slug": "carretilla",
+    "description": "Una carretilla resistente y de gran capacidad para transportar tierra, piedras y otros materiales en tu jardín. Cuenta con neumáticos inflables para facilitar el movimiento.",
+    "rutaImagen": "carretilla.jpg"
+  },
+  {
+    "nombre": "Semillas de lechuga milanesa",
+    "precio": 1250,
+    "precio_oferta": 630,
+    "categoria": "Semillas",
+    "label": "Oferta",
+    "slug": "semillas-de-lechuga-milanesa",
+    "description": "Estas semillas de lechuga milanesa te permitirán cultivar tu propia lechuga fresca en casa. Disfruta de su sabor y textura únicos en tus ensaladas y platos favoritos.",
+    "rutaImagen": "semilla-lechuga-milanesa.jpg"
+  },
+  {
+    "nombre": "Semillas de espinaca",
+    "precio": 1250,
+    "precio_oferta": 630,
+    "categoria": "Semillas",
+    "label": "Oferta",
+    "slug": "semillas-de-espinaca",
+    "description": "Las semillas de espinaca son ideales para cultivar esta verdura llena de nutrientes en tu huerto. Aprovecha sus beneficios para una alimentación saludable y sabrosa.",
+    "rutaImagen": "semilla-espinaca.jpg"
+  },
+  {
+    "nombre": "Semillas de lechuga",
+    "precio": 1250,
+    "precio_oferta": 630,
+    "categoria": "Semillas",
+    "label": "Oferta",
+    "slug": "semillas-de-lechuga",
+    "description": "Cultiva tu propia lechuga con estas semillas de alta calidad. Disfruta de su frescura y sabor en ensaladas, sándwiches y otros platos.",
+    "rutaImagen": "semilla-lechuga.jpg"
+  },
+  {
+    "nombre": "Semillas de tomate",
+    "precio": 1250,
+    "precio_oferta": 630,
+    "categoria": "Semillas",
+    "label": "Oferta",
+    "slug": "semillas-de-tomate",
+    "description": "Estas semillas de tomate te permitirán cultivar tus propios tomates jugosos y llenos de sabor. Disfruta de la frescura de los tomates caseros en tus comidas.",
+    "rutaImagen": "semilla-tomate.jpg"
+  },
+  {
+    "nombre": "Pino Radiata",
+    "precio": 5000,
+    "precio_oferta": 2510,
+    "categoria": "Arboles",
+    "label": "Oferta",
+    "slug": "pino-radiata",
+    "description": "El pino radiata es un árbol de crecimiento rápido y madera resistente. Ideal para proporcionar sombra y belleza a tu jardín.",
+    "rutaImagen": "brote-pino.png"
+  },
+  {
+    "nombre": "Alerce Patagónico",
+    "precio": 8000,
+    "precio_oferta": 4010,
+    "categoria": "Arboles",
+    "label": "Oferta",
+    "slug": "alerce-patagonico",
+    "description": "El alerce patagónico es un árbol nativo de la región de la Patagonia. Su madera duradera y su belleza lo convierten en una excelente opción para tu jardín.",
+    "rutaImagen": "brote-alerce.png"
+  },
+  {
+    "nombre": "Roble",
+    "precio": 6500,
+    "precio_oferta": 3260,
+    "categoria": "Arboles",
+    "label": "Oferta",
+    "slug": "roble",
+    "description": "El roble es un árbol majestuoso y de crecimiento lento. Sus hojas caducas y su madera de alta calidad lo convierten en una elección clásica para tu jardín.",
+    "rutaImagen": "brote-roble.png"
+  },
+  {
+    "nombre": "Coihue",
+    "precio": 5500,
+    "precio_oferta": 2760,
+    "categoria": "Arboles",
+    "label": "Oferta",
+    "slug": "coihue",
+    "description": "El coihue es un árbol nativo de América del Sur. Su madera dura y su resistencia a las condiciones climáticas adversas lo convierten en una opción ideal para tu jardín.",
+    "rutaImagen": "arbol-coihue.png"
+  },
+  {
+    "nombre": "Lenga",
+    "precio": 7000,
+    "precio_oferta": 3510,
+    "categoria": "Arboles",
+    "label": "Oferta",
+    "slug": "lenga",
+    "description": "La lenga es un árbol nativo de los bosques templados del sur de Chile y Argentina. Su corteza decorativa y su madera de calidad la convierten en una elección atractiva para tu jardín.",
+    "rutaImagen": "arbol-lenga.png"
+  },
+  {
+    "nombre": "Arrayán",
+    "precio": 4500,
+    "precio_oferta": 2260,
+    "categoria": "Arboles",
+    "label": "Oferta",
+    "slug": "arrayan",
+    "description": "El arrayán es un árbol nativo de los bosques templados de América del Sur. Sus flores blancas y su corteza de tonos rojizos lo hacen ideal para darle un toque de color a tu jardín.",
+    "rutaImagen": "arbol-arrayan.png"
+  },
+  {
+    "nombre": "Canelo",
+    "precio": 4000,
+    "precio_oferta": 2010,
+    "categoria": "Arboles",
+    "label": "Oferta",
+    "slug": "canelo",
+    "description": "El canelo es un árbol nativo de los bosques lluviosos de Chile y Argentina. Sus flores amarillas y su corteza aromática lo convierten en una opción encantadora para tu jardín.",
+    "rutaImagen": "arbol-canelo.jpg"
+  },
+  {
+    "nombre": "Arbusto de rosas",
+    "precio": 3500,
+    "precio_oferta": 1760,
+    "categoria": "Arbustos",
+    "label": "Oferta",
+    "slug": "arbusto-de-rosas",
+    "description": "Los arbustos de rosas son una excelente opción para añadir color y fragancia a tu jardín. Disfruta de sus hermosas flores en una variedad de colores y aromas.",
+    "rutaImagen": "arbusto-rosas.png"
+  },
+  {
+    "nombre": "Arbusto de lavanda",
+    "precio": 2800,
+    "precio_oferta": 1410,
+    "categoria": "Arbustos",
+    "label": "Oferta",
+    "slug": "arbusto-de-lavanda",
+    "description": "Los arbustos de lavanda son conocidos por su fragancia relajante y sus hermosas flores moradas. Añade un toque de encanto mediterráneo a tu jardín con estas plantas aromáticas.",
+    "rutaImagen": "arbusto-lavanda.jpg"
+  },
+  {
+    "nombre": "Arbusto de jazmín",
+    "precio": 4200,
+    "precio_oferta": 2110,
+    "categoria": "Arbustos",
+    "label": "Oferta",
+    "slug": "arbusto-de-jazmin",
+    "description": "Los arbustos de jazmín son apreciados por sus flores blancas y fragantes. Disfruta de su aroma dulce y embriagador en tu jardín o patio.",
+    "rutaImagen": "arbusto-jazmin.jpg"
+  },
+  {
+    "nombre": "Arbusto de hortensias",
+    "precio": 3900,
+    "precio_oferta": 2300,
+    "categoria": "Arbustos",
+    "label": "Nuevo",
+    "slug": "arbusto-de-hortensias",
+    "description": "Un hermoso arbusto de hortensias con flores coloridas. Ideal para decorar tu jardín o patio.",
+    "rutaImagen": "arbusto-hortensias.png"
+  },
+  {
+    "nombre": "Arbusto de lila",
+    "precio": 3200,
+    "precio_oferta": 1600,
+    "categoria": "Arbustos",
+    "label": "Nuevo",
+    "slug": "arbusto-de-lila",
+    "description": "Un elegante arbusto de lila con flores fragantes. Perfecto para embellecer tu espacio exterior.",
+    "rutaImagen": "arbusto-lila.png"
+  },
+  {
+    "nombre": "Maceta de terracota",
+    "precio": 1500,
+    "precio_oferta": 750,
+    "categoria": "Macetas",
+    "label": "Nuevo",
+    "slug": "maceta-de-terracota",
+    "description": "Una maceta de terracota resistente y duradera. Ideal para cultivar tus plantas favoritas.",
+    "rutaImagen": "maceta-terracota.png"
+  },
+  {
+    "nombre": "Maceta de plástico",
+    "precio": 900,
+    "precio_oferta": 450,
+    "categoria": "Macetas",
+    "label": "Nuevo",
+    "slug": "maceta-de-plastico",
+    "description": "Una maceta de plástico liviana y fácil de manejar. Perfecta para plantas de interior.",
+    "rutaImagen": "maceta-plastico.png"
+  },
+  {
+    "nombre": "Maceta colgante",
+    "precio": 2500,
+    "precio_oferta": 1250,
+    "categoria": "Macetas",
+    "label": "Nuevo",
+    "slug": "maceta-colgante",
+    "description": "Una hermosa maceta colgante para exhibir tus plantas en espacios reducidos. Añade un toque de verde a tu hogar.",
+    "rutaImagen": "maceta-colgante.png"
+  }
+]

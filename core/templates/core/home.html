@@ -1,0 +1,60 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div id="uso-api">
+    <h3>Conoce la calidad del aire en las distintas zonas del país</h3>
+    <p>
+        <label for="select-elemento">Calidad de aire de:</label>
+        <select id="select-elemento"></select>
+    <div id="tabla-datos"></div>
+    </p>
+</div>
+<!--Main layout-->
+<main>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption custom-caption">
+                    <h3>¿Quieres comenzar tu huerta en casa?</h3>
+                    <p>Compra los mejores productos al mejor precio.</p>
+                    <a href="{% static 'core/productos/productos.html' %}" class="btn btn-primary btn-sm">Ir a productos</a>
+                </div>
+                <a href=""><img src="{% static 'core/img/banner-maceteros.jpg' %}" class="d-block w-100" alt="Un monton de maceteros juntos en un mueble"></a>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption custom-caption">
+                    <h3>¿Maleza en tu jardín?</h3>
+                    <p>Lleva las mejores herramientas para cada trabajo.</p>
+                    <a href="{% static 'core/productos/herramientas.html' %}" class="btn btn-primary btn-sm">Ir a herramientas</a>
+                </div>
+                <img src="{% static 'core/img/banner-plantas.jpg' %}" class="d-block w-100" alt="Jungla de maleza">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption custom-caption">
+                    <h3>¿Buscas decoración?</h3>
+                    <p>Conoce nuestras nuevas macetas decorativas.</p>
+                    <a href="{% static 'core/productos/macetas.html' %}" class="btn btn-primary btn-sm">Ir a macetas</a>
+                </div>
+                <img src="{% static 'core/img/banner-maceta.jpg' %}" class="d-block w-100" alt="Un macetero decorativo muy bonito">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="false"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</main>
+<hr>
+<div class="separador"></div>
+<hr>
+{% endblock content %}

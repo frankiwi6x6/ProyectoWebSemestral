@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="bg-dark" lang="es">
+
+<head>
+    <!--INICIO HEADER CARPETA BASE-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardineando</title>
+    <!--Estilos de la pagina actual-->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+
+    <link rel="icon" href="img/icono.png">
+    <script src="JS/script.js"></script>
+    <!--FIN HEADER CARPETA BASE-->
+</head>
+
+<body>
+    <!--INICIO NAVBAR VERSION CARPETA INICIAL-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <table class="icomo-marca">
+                    <tr>
+                        <td>
+                            <img class="icono" src="img/icono.png" alt="Icono flor">
+                        </td>
+                        <td>
+                            Jardineando
+                        </td>
+                    </tr>
+                </table>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="productos/productos.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="productos/productos.html">Todos los productos</a></li>
+                            <li><a class="dropdown-item" href="productos/herramientas.html">Herramientas</a></li>
+                            <li><a class="dropdown-item" href="productos/semillas.html">Semillas</a></li>
+                            <li><a class="dropdown-item" href="productos/arboles.html">Arboles</a></li>
+                            <li><a class="dropdown-item" href="productos/arbustos.html">Arbustos</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="carrito.html" class="nav-link"><i class="bi bi-cart2"></i></a>
+                    </li>
+                    <li class=""> </li>
+                </ul>
+                <a href="#" class="navbar-brand sesion"></a>
+                <a id="btn-sesion" class="btn btn-outline-light my-2 my-sm-0" type="button" href="cuenta/login.html"><i
+                        class="bi bi-person"> Iniciar Sesion</i></a>
+                <!--
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>  
+                -->
+            </div>
+        </div>
+    </nav>
+
+    <div id="uso-api">
+        <h3>Conoce la calidad del aire en las distintas zonas del país</h3>
+        <p>
+            <label for="select-elemento">Calidad de aire de:</label>
+            <select id="select-elemento"></select>
+        <div id="tabla-datos"></div>
+        </p>
+    </div>
+
+
+
+
+    <!--FIN DEL NAVBAR-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption custom-caption">
+                    <h3>¿Quieres comenzar tu huerta en casa?</h3>
+                    <p>Compra los mejores productos al mejor precio.</p>
+                    <a href="productos/productos.html" class="btn btn-primary btn-sm">Ir a productos</a>
+                </div>
+                <a href=""><img src="img/banner-maceteros.jpg" class="d-block w-100" alt="Un monton de maceteros juntos en un mueble"></a>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption custom-caption">
+                    <h3>¿Maleza en tu jardín?</h3>
+                    <p>Lleva las mejores herramientas para cada trabajo.</p>
+                    <a href="productos/herramientas.html" class="btn btn-primary btn-sm">Ir a herramientas</a>
+                </div>
+                <img src="img/banner-plantas.jpg" class="d-block w-100" alt="Jungla de maleza">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption custom-caption">
+                    <h3>¿Buscas decoración?</h3>
+                    <p>Conoce nuestras nuevas macetas decorativas.</p>
+                    <a href="productos/macetas.html" class="btn btn-primary btn-sm">Ir a macetas</a>
+                </div>
+                <img src="img/banner-maceta.jpg" class="d-block w-100" alt="Un macetero decorativo muy bonito">
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="false"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</body>
+<hr>
+<div class="separador">
+
+</div>
+<hr>
+<footer class="footer-arriba  bg-dark">
+    <div class="row">
+        <div class="footer-content col-sm">
+            <a href="">
+                <h3>Contacto:</h3>
+            </a>
+            <ul>
+                <p>contacto@jardineando.cl</p>
+                <p>+56 9 0000 0000</p>
+            </ul>
+            <p class="falso">No existen estos datos, no intente contactar.</p>
+        </div>
+        <div class="footer-content col-sm">
+            <a href="#">
+
+                <h3>Servicio al cliente</h3>
+            </a>
+            <ul>
+                <a href="#">
+                    <p>Términos y condiciones</p>
+                </a>
+                <a href="#">
+                    <p>Orden de servicio</p>
+                </a>
+                <a href="#">
+                    <p>Representante legal</p>
+                </a>
+                <a href="#">
+                    <p>Bases y promociones</p>
+                </a>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

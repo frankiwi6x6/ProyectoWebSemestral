@@ -1,0 +1,199 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+  <main>
+    <div class="container">
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle lighten-3 mt-3 mb-5">
+
+        <!-- Navbar brand -->
+        <span class="navbar-brand"> Categorías:</span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#basicExampleNav2" aria-controls="basicExampleNav2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav2">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Todas
+                <span class="sr-only">(actual)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Arboles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Arbustos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Herramientas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Semillas</a>
+            </li>
+            </ul>
+            <!-- Links -->
+
+            <form class="form-inline">
+            <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            </form>
+        </div>
+        <!-- Collapsible content -->
+
+      </nav>
+      <!--/.Navbar-->
+
+      <!--Section: Products v.3-->
+      <section class="text-center mb-4">
+
+        <div class="row wow fadeIn">
+
+          {% for item in object_list %}
+          <div class="col-lg-3 col-md-6 mb-4">
+
+            <div class="card">
+
+              <div class="view overlay">
+                {% comment %} <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top" {% endcomment %}
+                <img src="{{ item.image.url }}" class="card-img-top">
+                <a href="{{ item.get_absolute_url }}">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>{{ item.get_category_display }}</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="{{ item.get_absolute_url }}" class="dark-grey-text">{{ item.title }}</a>
+                    {% if item.label == 'S' %}
+                        <span class="badge badge-pill {{ item.get_label_display }}-color">Nuevo</span>
+                    {% elif item.label == 'D' %}
+                        <span class="badge badge-pill {{ item.get_label_display }}-color">Oferta</span>
+                    {% elif item.label == 'W' %}
+                        <span class="badge badge-pill {{ item.get_label_display }}-color">Top-Ventas</span>
+                    {% endif %}
+
+                  </strong>
+                </h5>
+
+                <h5 class="font-weight-bold green-text">
+                  <strong>
+                  {% if item.on_sale %}
+                    <div class="product-price-container product-normal-price mt-3">
+                      <dd class="product-price-type">Precio $<del>{{ item.price|floatformat:"0g" }}</del></dd>
+                      <dt class="product-price product-price__line-thru"></dt>
+                    </div>
+                    <div class="product-price-container product-internet-price mt-2">
+                      <dd class="product-price-type">Oferta ${{ item.discount_price|floatformat:"0g" }}</dd>
+                      <dt class="product-price"></dt>
+                    </div>
+                    <div class="product-price-container product-price-discount mt-3">
+                      <dd class="product-price-type">Descuento<span class="badge rounded-pill badge-danger ms-2">
+                        {{ item.get_discount_pencentaje }}%
+                      </span></dd>
+                    </div>
+                  {% else %}
+                    <div class="product-price-container product-normal-price mt-3">
+                      <dd class="product-price-type">Precio ${{ item.price|floatformat:"0g" }}</dd>
+                      <dt class="product-price product-price__line-thru"></dt>
+                    </div>
+                  {% endif %}
+                  </strong>
+                </h4>
+
+              </div>
+
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+
+      </section>
+      <!--Section: Products v.3-->
+
+      <!--Pagination-->
+      {% if is_paginated %}
+      <nav class="d-flex justify-content-center wow fadeIn">
+        <ul class="pagination pg-blue">
+
+          <!--Arrow first-->
+          {% if page_obj.has_previous %}
+          <li class="page-item">
+            <a class="page-link" href="?page=1" aria-label="First">
+              <span aria-hidden="true">&laquo;&laquo;</span>
+              <span class="sr-only">Primera</span>
+            </a>
+          </li>
+          {% endif %}
+
+          <!--Arrow left-->
+          {% if page_obj.has_previous %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Anterior</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% for num in page_obj.paginator.page_range %}
+            {% if num == page_obj.number %}
+            <li class="page-item active">
+              <a class="page-link" href="?page={{ page_obj.number }}">{{ num }}
+                <span class="sr-only">(actual)</span>
+              </a>
+            </li>
+            {% elif num > page_obj.number|add:"-3" and num < page_obj.number|add:"3" %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+              </li>
+            {% elif num == page_obj.number|add:"-3" or num == page_obj.number|add:"3" %}
+              <li class="page-item disabled">
+                <span class="page-link">...</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+          <!--Arrow right-->
+          {% if page_obj.has_next %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </li>
+          {% endif %}
+
+          <!--Arrow last-->
+          {% if page_obj.has_next %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}" aria-label="Last">
+              <span aria-hidden="true">&raquo;&raquo;</span>
+              <span class="sr-only">Última</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+      {% endif %}
+      <!--Pagination-->
+
+
+    </div>
+  </main>
+
+{% endblock content %}
+
+
+
